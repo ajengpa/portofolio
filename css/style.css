@@ -575,3 +575,14 @@ body{
     margin:10px 0;
 
 }
+
+.view-projects-btn {
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.view-projects-btn:hover {
+    transform: translateY(-3px);
+}
