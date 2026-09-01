@@ -1,0 +1,259 @@
+/* =========================================
+   PROJECTS PAGE
+========================================= */
+
+.projects-page {
+    min-height: 100vh;
+    padding: 150px 0 80px;
+    background: #07111f;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.projects-page .section-title {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.projects-page .section-title span {
+    color: #20b8ff;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.projects-page .section-title h1 {
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: 700;
+    margin: 10px 0 20px;
+}
+
+.projects-page .section-title p {
+    color: #b8c2d1;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* =========================================
+   PROJECT CARD
+========================================= */
+
+.projects-page .project-detail-card {
+    height: 100%;
+    width: 100%;
+    background: #0d1a2b;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.projects-page .project-detail-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================
+   PROJECT IMAGE
+========================================= */
+
+/* INI YANG PALING PENTING */
+
+.projects-page .project-detail-card img {
+    display: block;
+
+    width: 100% !important;
+    height: 280px !important;
+
+    max-width: 100% !important;
+    max-height: 280px !important;
+
+    object-fit: cover !important;
+    object-position: center;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* =========================================
+   PROJECT CONTENT
+========================================= */
+
+.projects-page .project-detail-content {
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+}
+
+.projects-page .project-detail-content h3 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.projects-page .project-detail-content p {
+    color: #b8c2d1;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.projects-page .project-status {
+    display: inline-block;
+    width: fit-content;
+
+    padding: 6px 14px;
+
+    border-radius: 20px;
+
+    background: rgba(32, 184, 255, 0.12);
+    color: #20b8ff;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   TECHNOLOGY
+========================================= */
+
+.projects-page .tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-bottom: 25px;
+}
+
+.projects-page .tech span {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: #17263a;
+
+    color: #dce7f5;
+
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.projects-page .project-button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    margin-top: auto;
+}
+
+.projects-page .project-button a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 9px 18px;
+
+    border: 1px solid #20b8ff;
+    border-radius: 8px;
+
+    color: #20b8ff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+}
+
+.projects-page .project-button a:hover {
+    background: #20b8ff;
+    color: #07111f;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+    .projects-page {
+        padding: 130px 0 60px;
+    }
+
+    .projects-page .section-title h1 {
+        font-size: 38px;
+    }
+
+    .projects-page .project-detail-card img {
+        height: 250px !important;
+        max-height: 250px !important;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .projects-page {
+        padding: 110px 0 50px;
+    }
+
+    .projects-page .section-title {
+        margin-bottom: 40px;
+    }
+
+    .projects-page .section-title h1 {
+        font-size: 32px;
+    }
+
+    .projects-page .section-title p {
+        font-size: 14px;
+    }
+
+    .projects-page .project-detail-card img {
+        height: 220px !important;
+        max-height: 220px !important;
+    }
+
+    .projects-page .project-detail-content {
+        padding: 22px;
+    }
+
+    .projects-page .project-detail-content h3 {
+        font-size: 21px;
+    }
+
+}
