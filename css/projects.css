@@ -257,3 +257,45 @@
     }
 
 }
+
+/* =========================================
+   BACK TO PORTFOLIO BUTTON
+========================================= */
+
+.back-portfolio {
+    margin-bottom: 40px;
+}
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px 20px;
+
+    border: 1px solid #38BDF8;
+    border-radius: 30px;
+
+    color: #38BDF8;
+    background: transparent;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+}
+
+.back-btn i {
+    font-size: 13px;
+}
+
+.back-btn:hover {
+    background: #38BDF8;
+    color: #08111f;
+
+    transform: translateX(-4px);
+
+    box-shadow: 0 8px 25px rgba(56, 189, 248, 0.25);
+}

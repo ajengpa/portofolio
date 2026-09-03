@@ -536,43 +536,118 @@ body{
 
 }
 
+/* =========================================
+   CONTACT
+========================================= */
+
 .contact{
-
     padding:120px 0;
-
 }
 
-.contact-box{
+.contact .section-title p{
+    color:#cbd5e1;
+    margin-top:15px;
+}
 
-    max-width:700px;
 
-    margin:auto;
+/* Contact Card */
 
-    text-align:center;
+.contact-card{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    height:200px;
 
     background:#111827;
 
-    padding:50px;
+    border:1px solid rgba(255,255,255,.08);
 
     border-radius:20px;
 
-}
+    text-decoration:none;
 
-.contact-box p{
+    transition:.35s;
 
-    color:#cbd5e1;
-
-}
-
-.contact-info{
-
-    margin:35px 0;
+    padding:25px;
 
 }
 
-.contact-info p{
 
-    margin:10px 0;
+.contact-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#38BDF8;
+
+    box-shadow:0 15px 40px rgba(56,189,248,.18);
+
+}
+
+
+/* Icon */
+
+.contact-icon{
+
+    width:65px;
+    height:65px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#1E293B;
+
+    color:#38BDF8;
+
+    font-size:28px;
+
+    margin-bottom:18px;
+
+    transition:.35s;
+
+}
+
+
+.contact-card:hover .contact-icon{
+
+    background:#38BDF8;
+
+    color:#08111f;
+
+    transform:scale(1.1);
+
+}
+
+
+/* Title */
+
+.contact-card h4{
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+}
+
+
+/* Description */
+
+.contact-card p{
+
+    color:#94a3b8;
+
+    font-size:13px;
+
+    margin:0;
 
 }
 
